@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>行事曆</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css'/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="wrap">
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-10 mx-auto">
+                    <h1>補習班行事曆</h1>
+                    <div id="calList">
+                      
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="chk_English" value="src=OGQzMjEzYWE5OGU0OTRjMzYwOGQ2MjFmZDhmYjE4YzljNzRhYjY4ZjMwNTI4ZTIzMmYyOTVlMTBlMTQzNzBhZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23EF6C00&amp;">
+                            <label class="form-check-label" for="chk_English">英語班</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="chk_Japanese" value="src=ODRjNDY0NzJhZmViMTZlNmJhNjEwYzAzYzcwY2E0MjcwYmU2MmY2MmQ3NDQxYmNiNmE4YWM4MWFkM2U0YzQwN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23616161&amp;">
+                            <label class="form-check-label" for="chk_Japanese">日語班</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="chk_Korean" value="src=MzQ2MTk1MzQyZjU2Njk3MGM1MzllZTMwODA0N2FkZjAyYjcyYjFiYWJhOWYwZTI1NjUyM2JjZmY4ZmE0MzM4NEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23A79B8E&amp;">
+                            <label class="form-check-label" for="chk_K">韓語班</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="chk_Holiday" value="src=NTQ4NmVlOWNiM2ZhMjFhMmIyMzZhNTVkMDBiYjRhM2U5NDk0NmRkZDczNjI4OGI1NDZkODI3YzlmMzk4MDk5ZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%233F51B5&amp;">
+                            <label class="form-check-label" for="chk_Holiday">放假</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <a class="btn btn-primary" href="javascript:;" onclick="showCalendar();">確定</a>
+                        </div>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9 mt-5">
+                        <iframe class="embed-responsive-item" id="ifCal" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTaipei&amp;
+                        src=OGQzMjEzYWE5OGU0OTRjMzYwOGQ2MjFmZDhmYjE4YzljNzRhYjY4ZjMwNTI4ZTIzMmYyOTVlMTBlMTQzNzBhZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23EF6C00&amp;
+                        src=ODRjNDY0NzJhZmViMTZlNmJhNjEwYzAzYzcwY2E0MjcwYmU2MmY2MmQ3NDQxYmNiNmE4YWM4MWFkM2U0YzQwN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23616161&amp;
+                        src=MzQ2MTk1MzQyZjU2Njk3MGM1MzllZTMwODA0N2FkZjAyYjcyYjFiYWJhOWYwZTI1NjUyM2JjZmY4ZmE0MzM4NEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23A79B8E&amp;
+                        src=NTQ4NmVlOWNiM2ZhMjFhMmIyMzZhNTVkMDBiYjRhM2U5NDk0NmRkZDczNjI4OGI1NDZkODI3YzlmMzk4MDk5ZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%233F51B5&amp;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
